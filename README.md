@@ -43,29 +43,32 @@ O projeto é construído com base nos quatro pilares da POO:
 
 ## Estrutura do Projeto
 
-src/
-├── application/
-│   ├── Program.java
-│
-├── domain/
-│   ├── entities/
-│   │   ├── CurrentAccount.java
-│   │   ├── MovementsAccount.java
-│   │   ├── SavingsAccount.java
-├────── enums/
-│   │   ├── ─ MovementType.java
-│   │
-│   ├── infra/services
-│   │   ├── AuthMovementService.java
-│   │   ├── AuthMovementServiceImpl.java
-│   │   ├── ExtractService.java
-│   │   ├── ExtractServiceImpl.java
-│   │
-│   └── service/
-│       ├── AccountService.java
-│       ├── AccountServiceImpl.java
-│       ├── AuthService.java
-│       ├── AuthServiceImpl.java
+<pre>├── README.md
+└── <font color="#12488B"><b>src</b></font>
+    ├── <font color="#12488B"><b>application</b></font>
+    │   └── Program.java
+    ├── <font color="#12488B"><b>domain</b></font>
+    │   ├── <font color="#12488B"><b>entities</b></font>
+    │   │   ├── Bank.java
+    │   │   ├── CurrentAccount.java
+    │   │   ├── <font color="#12488B"><b>enums</b></font>
+    │   │   │   └── MovementType.java
+    │   │   ├── MovementsAccount.java
+    │   │   └── SavingsAccount.java
+    │   ├── <font color="#12488B"><b>exceptions</b></font>
+    │   │   ├── AccountNotFoundException.java
+    │   │   ├── IncorrectUserOrPasswordException.java
+    │   │   └── InsufficientFundsException.java
+    │   └── <font color="#12488B"><b>superClass</b></font>
+    │       ├── Account.java
+    │       └── Client.java
+    └── <font color="#12488B"><b>infra</b></font>
+        └── <font color="#12488B"><b>services</b></font>
+            ├── AuthMovementServiceImpl.java
+            ├── AuthMovementService.java
+            ├── ExtractServiceImpl.java
+            └── ExtractService.java
+</pre>
 
 ## Funcionalidades
 
