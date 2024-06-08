@@ -1,6 +1,6 @@
-package model.entities;
+package domain.entities;
 
-import model.entities.enums.MovementType;
+import domain.entities.enums.MovementType;
 
 import java.time.LocalDate;
 

@@ -1,4 +1,4 @@
-package model.superClass;
+package domain.superClass;
 
 import java.time.LocalDate;
 

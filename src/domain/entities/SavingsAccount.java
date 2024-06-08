@@ -1,7 +1,7 @@
-package model.entities;
+package domain.entities;
 
-import model.superClass.Account;
-import model.superClass.Client;
+import domain.superClass.Account;
+import domain.superClass.Client;
 
 public class SavingsAccount extends Account {
 

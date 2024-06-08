@@ -1,4 +1,4 @@
-package model.entities.enums;
+package domain.entities.enums;
 
 public enum MovementType {
 

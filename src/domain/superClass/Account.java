@@ -1,16 +1,14 @@
-package model.superClass;
+package domain.superClass;
 
-import model.entities.MovementsAccount;
-import model.entities.enums.MovementType;
-import services.AuthMovementService;
-import services.AuthMovementServiceImpl;
-import services.ExtractServiceImpl;
+import domain.entities.MovementsAccount;
+import domain.entities.enums.MovementType;
+import infra.services.AuthMovementService;
+import infra.services.AuthMovementServiceImpl;
+import infra.services.ExtractServiceImpl;
 
 import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Random;
-import java.util.random.RandomGenerator;
 
 public abstract class Account {
 
@@ -34,7 +32,7 @@ public abstract class Account {
         this.balance = 0.0;    }
 
     public void deposit(double amount){
-        authMovimentService.authentication(this);
+        authMovimentService.authenticationMovement(this);
         this.balance += amount;
         lastMoviments.add(new MovementsAccount(LocalDate.now(), MovementType.DEPOSIT, amount));
     }

@@ -1,6 +1,6 @@
-package services;
+package infra.services;
 
-import model.superClass.Account;
+import domain.superClass.Account;
 
 import java.util.ArrayList;
 import java.util.List;

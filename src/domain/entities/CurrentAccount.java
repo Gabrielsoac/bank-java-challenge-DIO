@@ -1,9 +1,9 @@
-package model.entities;
+package domain.entities;
 
-import exceptions.InsufficientFundsException;
-import model.entities.enums.MovementType;
-import model.superClass.Account;
-import model.superClass.Client;
+import domain.exceptions.InsufficientFundsException;
+import domain.entities.enums.MovementType;
+import domain.superClass.Account;
+import domain.superClass.Client;
 
 import java.time.LocalDate;
 
@@ -14,7 +14,7 @@ public class CurrentAccount extends Account {
     }
 
     public void withdraw(double amount){
-        authMovimentService.authentication(this);
+        authMovimentService.authenticationMovement(this);
 
         if (this.balance < amount){
             throw new InsufficientFundsException("Saldo Insuficiente, não foi possível realizar saque.");
@@ -25,7 +25,7 @@ public class CurrentAccount extends Account {
     }
 
     public void transfer(double amount, Account account){
-        authMovimentService.authentication(this);
+        authMovimentService.authenticationMovement(this);
 
         if(this.balance < amount){
             throw new InsufficientFundsException("Saldo Insuficiente, não foi possível realizar transferência");
