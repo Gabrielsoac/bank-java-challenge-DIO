@@ -78,7 +78,7 @@ O projeto é construído com base nos quatro pilares da POO:
 
 ### Registro de Usuários
 
--   **Register*: Crie uma nova conta de usuário fornecendo nome, data de nascimento, login e senha.
+-   **Register**: Crie uma nova conta de usuário fornecendo nome, data de nascimento, login e senha.
 
 ### Operações Bancárias
 
